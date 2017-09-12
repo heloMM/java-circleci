@@ -24,5 +24,5 @@ deployment:
     homolog:
         branch: master
         commands:
-          - scp -oStrictHostKeyChecking=no -i dev/leandro-teste.pem target/java-circleci-0.0.3.jar ec2-user@54.94.226.70:~
+          - scp -oStrictHostKeyChecking=no -i leandro-teste.pem target/java-circleci-0.0.3.jar ec2-user@54.94.226.70:~
          # - ssh -oStrictHostKeyChecking=no -i dev/leandro-teste.pem ec2-user@54.94.226.70 "/home/ec2-user/deploy-cron.sh"(esse cron é para parar o wildfly, copiar o war pra pasta correta "standalone/deploys - algo assim" e depois reinicia o wildfly)
